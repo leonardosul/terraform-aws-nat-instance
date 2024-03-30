@@ -44,7 +44,7 @@ data "aws_ami" "this" {
   owners      = ["amazon"]
   filter {
     name   = "architecture"
-    values = ["x86_64"]
+    values = [var.architecture]
   }
   filter {
     name   = "root-device-type"

@@ -42,6 +42,11 @@ variable "instance_types" {
   default     = ["t3.nano", "t3a.nano"]
 }
 
+variable "architecture" {
+  type = string
+  default = "x86_64"
+}
+
 variable "use_spot_instance" {
   description = "Whether to use spot or on-demand EC2 instance"
   type        = bool
