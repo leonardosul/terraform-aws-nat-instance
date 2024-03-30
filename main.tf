@@ -52,7 +52,7 @@ data "aws_ami" "this" {
   }
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-*"]
+    values = ["amzn2-ami-*"]
   }
   filter {
     name   = "virtualization-type"
@@ -60,7 +60,7 @@ data "aws_ami" "this" {
   }
   filter {
     name   = "block-device-mapping.volume-type"
-    values = ["gp2"]
+    values = [var.volume_type]
   }
 }
 

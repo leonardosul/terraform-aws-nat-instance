@@ -43,11 +43,13 @@ variable "instance_types" {
 }
 
 variable "architecture" {
+  description = "OS Architecture of the NAT instance. Default to x86_64"
   type = string
   default = "x86_64"
 }
 
 variable "volume_type" {
+  description = "Volume type of the NAT instance. Default to gp2"
   type = string
   default = "gp2"
 }
