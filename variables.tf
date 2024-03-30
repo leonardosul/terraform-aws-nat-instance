@@ -47,6 +47,11 @@ variable "architecture" {
   default = "x86_64"
 }
 
+variable "volume_type" {
+  type = string
+  default = "gp2"
+}
+
 variable "use_spot_instance" {
   description = "Whether to use spot or on-demand EC2 instance"
   type        = bool
