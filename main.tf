@@ -52,7 +52,7 @@ data "aws_ami" "this" {
   }
   filter {
     name   = "name"
-    values = ["amzn2-ami-*"]
+    values = ["amzn2-ami-kernel-*"]
   }
   filter {
     name   = "virtualization-type"
